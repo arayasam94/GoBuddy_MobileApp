@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_search"
+           android:icon="@drawable/ic_search_white_24dp"
+        android:iconTint="@color/cardview_light_background"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/nav_post_ad"
+        android:icon="@drawable/post_ad"
+        android:title="Post Ad"/>
+
+    <item
+        android:id="@+id/nav_your_rides"
+        android:icon="@drawable/ic_directions_car_white_24dp"
+        android:title="Your Rides"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="Profile"/>
+
+
+</menu>

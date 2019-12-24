@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewPost">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            app:title="Post Details" >
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/vp_carImage"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@drawable/carpooljpg"
+                android:adjustViewBounds="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/vp_driver_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:elevation="@dimen/fui_wrapper_padding_horiz"
+                android:layout_marginTop="136dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/fui_wrapper_padding_horiz"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/vp_carImage"
+                    android:layout_alignBottom="@+id/vp_driver_image"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Description"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/vp_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="91dp"
+                        android:text="Test description"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:textSize="@dimen/fui_wrapper_padding_horiz"
+                    android:id="@+id/vp_src"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Source"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"/>
+
+
+                <TextView
+                    android:id="@+id/vp_dst"
+                    android:layout_weight="0.4"
+                    android:textSize="@dimen/fui_wrapper_padding_horiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Destination"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/vp_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="27/07/1993"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/ic_date_range_black_24dp"
+                    />
+                <TextView
+                    android:id="@+id/vp_time"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_access_time_black_24dp"
+                    android:textAlignment="center"
+                    android:text="10.00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vp_lblSeat"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:layout_weight="0.5"
+                    android:textAlignment="center"/>
+
+                <Spinner
+                    android:id="@+id/vp_seats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_weight="0.7">
+
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/vp_price"
+                    android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fui_wrapper_padding_horiz"
+                    android:text="$200"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/fui_wrapper_padding_horiz">
+            <Button
+                android:id="@+id/vp_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent2"
+                android:textColor="@color/Dark_Grey"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_alignParentBottom="true"
+                android:text="@string/vp_btnbook"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GoBuddy</string>
+    <string name="lblEmail">Enter email address</string>
+    <string name="lblPassword">Enter password</string>
+    <string name="lblBtn">Submit</string>
+    <string name="searchBtn">Search</string>
+    <string name="srcSearchLbl">Enter Source</string>
+    <string name="dstSearchLbl">Enter Destination</string>
+    <string name="dateSearchLbl">Enter Date</string>
+
+    <array name="seats_available">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <string name="title_activity_adpopup">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_view_post">ViewPost</string>
+    <string name="vp_lblSeat">Seats Available</string>
+    <string name="vp_btnbook">Book</string>
+    <string name="post_description">Description</string>
+    <string name="post_btn">Post ad</string>
+    <string name="title_activity_your_rides">Your_rides</string>
+    <string name="tab_text_1">Rides as Driver</string>
+    <string name="tab_text_2">Rides as Passenger</string>
+    <string name="title_activity_your_rides_fragment">YourRidesFragment</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="driver_profile">Driver Profile</string>
+</resources>
